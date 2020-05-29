@@ -11,10 +11,23 @@ class App extends Component {
     ],
   };
 
+  editFruit = () => {
+    console.log("Editing Fruit");
+  };
+
+  deleteFruit = () => {
+    console.log("Deleting Fruit");
+  };
+
   render() {
     return (
       <div className="container-outer">
         <h1>I AM THE APP</h1>
+        <FruitsInventory
+          fruitsData={this.state.fruits}
+          editFruit={this.editFruit}
+          deleteFruit={this.deleteFruit}
+        />
       </div>
     );
   }
