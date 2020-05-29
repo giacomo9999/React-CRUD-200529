@@ -4,7 +4,7 @@ const EditFruit = (props) => {
   return (
     <div className="container-inner">
       <h2>Edit Fruit</h2>
-      <form className="h-form" onSubmit={props.addFruit}>
+      <form className="h-form" onSubmit={props.updateFruit}>
         <label className="h-label">Name</label>
         <input
           className="h-input"

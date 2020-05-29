@@ -7,7 +7,7 @@ const FruitsInventory = (props) => {
       <td>{fruit.fruitName}</td>
       <td>{fruit.fruitColor}</td>
       <td>
-        <button onClick={props.editFruit}>Edit</button>
+        <button onClick={() => props.editFruit(fruit)}>Edit</button>
       </td>
       <td>
         <button onClick={() => props.deleteFruit(fruit.fruitId)}>Delete</button>
